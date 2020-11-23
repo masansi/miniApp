@@ -15,12 +15,19 @@
 				<view class="item" v-for="(item, index) in bannerList" :key="index"  :class="[{'active': swiperIndex === index}]"></view>
 			</view>
 		</view>
+		<view class="">
+			<homeTab :courseTypes="courseTypes"/>
+		</view>
 	</view>
 </template>
 
 <script>
 	import { homepage } from '@/api/user.js'
+	import homeTab from '@/common/components/home/homeTab'
 	export default {
+		components: {
+			'homeTab': homeTab
+		},
 		data() {
 			return {
 				bannerList: [],
@@ -53,56 +60,60 @@
 	}
 </script>
 
-<style >
+<style lang="less">
 .homeIndex{
 	height: 100vh;
 	padding: 20rpx 40rpx 0 40rpx;
 	background-color: #FAFAFA;
+	.search{
+		padding: 20rpx 30rpx;
+		font-size: 28rpx;
+		border-radius: 40rpx;
+		display: flex;
+		align-items: center;
+		color: #D3D3D3;
+		background-color: #F3F3F3;
+	}
+	.banner{
+		margin-top: 40rpx;
+		height: 300rpx;
+		position: relative;
+		width: 100%;
+		border-radius: 10rpx;
+		overflow: hidden;
+		swiper{
+			height: 100%;
+			image{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.radius{
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 40rpx;
+			.item{
+				height: 15rpx;
+				width: 15rpx;
+				border-radius: 50%;
+				background-color: #ffffff;
+				margin-right: 20rpx;
+			}
+			.item.active{
+				width: 30rpx;
+				border-radius: 20rpx;
+				background-color: #FFE031;
+			}
+		}
+		
+	}
+	
 }
-.search{
-	padding: 20rpx 30rpx;
-	font-size: 28rpx;
-	border-radius: 40rpx;
-	display: flex;
-	align-items: center;
-	color: #D3D3D3;
-	background-color: #F3F3F3;
-}
-.banner{
-	height: 300rpx;
-	position: relative;
-	width: 100%;
-	border-radius: 10rpx;
-	overflow: hidden;
-}
-.banner swiper{
-	height: 100%;
-}
-.banner swiper image{
-	width: 100%;
-	height: 100%;
-}
-.banner .radius{
-	position: absolute;
-	z-index: 2;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 40rpx;
-}
-.banner .radius .item{
-	height: 15rpx;
-	width: 15rpx;
-	border-radius: 50%;
-	background-color: #ffffff;
-	margin-right: 20rpx;
-}
-.banner .radius .item.active{
-	width: 30rpx;
-	border-radius: 20rpx;
-	background-color: #FFE031;
-}
+
 </style>

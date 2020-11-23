@@ -11,4 +11,29 @@
 
 
 /*每个页面公共css */
+.space-between{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	        justify-content:space-between;
+}
+.flex-wrap{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	/* wrap-reverse
+ */
+	-webkit-flex-wrap: wrap ;
+	        flex-wrap: wrap ;
+}
+.ellipsis{
+	overflow:hidden; /*超出的文本隐藏
+ */
+	text-overflow:ellipsis; /*溢出用省略号显示
+ */
+	white-space:nowrap; /*溢出不换行
+ */
+}
 

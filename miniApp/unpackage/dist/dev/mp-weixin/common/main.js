@@ -60,7 +60,7 @@ var component = Object(_E_HBuilderX_plugins_uniapp_cli_node_modules_dcloudio_vue
   renderjs
 )
 
-component.options.__file = "D:/waibao/project/miniApp/App.vue"
+component.options.__file = "App.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
