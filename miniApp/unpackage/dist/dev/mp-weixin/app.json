@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/homeIndex",
+    "pages/information/informationIndex",
+    "pages/course/courseIndex",
+    "pages/recruit/recruitIndex",
+    "pages/mine/mineIndex"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#0460EE",
+    "list": [
+      {
+        "pagePath": "pages/home/homeIndex",
+        "iconPath": "static/images/home_1.png",
+        "selectedIconPath": "static/images/home_2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/information/informationIndex",
+        "iconPath": "static/images/home_1.png",
+        "selectedIconPath": "static/images/home_2.png",
+        "text": "明星模范团"
+      },
+      {
+        "pagePath": "pages/course/courseIndex",
+        "iconPath": "static/images/home_1.png",
+        "selectedIconPath": "static/images/home_2.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/recruit/recruitIndex",
+        "iconPath": "static/images/home_1.png",
+        "selectedIconPath": "static/images/home_2.png",
+        "text": "招聘"
+      },
+      {
+        "pagePath": "pages/mine/mineIndex",
+        "iconPath": "static/images/home_1.png",
+        "selectedIconPath": "static/images/home_2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
