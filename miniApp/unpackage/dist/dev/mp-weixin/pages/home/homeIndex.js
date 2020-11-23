@@ -154,6 +154,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
 var _user = __webpack_require__(/*! @/api/user.js */ 17); //
 //
 //
@@ -177,15 +185,15 @@ var _user = __webpack_require__(/*! @/api/user.js */ 17); //
 //
 //
 //
-var homeTab = function homeTab() {__webpack_require__.e(/*! require.ensure | common/components/home/homeTab */ "common/components/home/homeTab").then((function () {return resolve(__webpack_require__(/*! @/common/components/home/homeTab */ 47));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { 'homeTab': homeTab }, data: function data() {return { bannerList: [], courseTypes: [], hots: [], lecturers: [], recommends: [], swiperIndex: 0 };}, onLoad: function onLoad() {var _this = this;(0, _user.homepage)().then(function (res) {console.log(res);if (res.code === 200) {var data = res.data;_this.bannerList = data.banners;_this.courseTypes = data.courseTypes;_this.hots = data.hots;
-        _this.lecturers = data.lecturers;
-        _this.recommends = data.recommends;
-      }
-    });
-  },
-  methods: {
-    swiperChange: function swiperChange(e) {
-      var i = e.detail.current;
+//
+//
+//
+//
+//
+//
+//
+//
+var homeTab = function homeTab() {__webpack_require__.e(/*! require.ensure | common/components/home/homeTab */ "common/components/home/homeTab").then((function () {return resolve(__webpack_require__(/*! @/common/components/home/homeTab */ 47));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { 'homeTab': homeTab }, data: function data() {return { bannerList: [], courseTypes: [], hots: [], lecturers: [], recommends: [], swiperIndex: 0 };}, onLoad: function onLoad() {var _this = this;(0, _user.homepage)().then(function (res) {console.log(res);if (res.code === 200) {var data = res.data;_this.bannerList = data.banners;_this.courseTypes = data.courseTypes;_this.hots = data.hots;_this.lecturers = data.lecturers;_this.recommends = data.recommends;}});}, methods: { swiperChange: function swiperChange(e) {var i = e.detail.current;
       this.swiperIndex = i;
     } } };exports.default = _default;
 
