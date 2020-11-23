@@ -41,7 +41,6 @@
 		.oneColumn {
 			overflow: hidden;
 			padding: 20rpx 20rpx 0 20rpx;
-			background: #fff;
 			color: #2a374b;
 			z-index: 1;
 			box-sizing: border-box;
@@ -50,15 +49,14 @@
 				width: 80rpx;
 				height: 80rpx;
 				border-radius: 80rpx;
-				margin-bottom: 10rpx;
-				background-color: #F1F4F7;
+				background-color: #ffffff;
 
 			}
 
 			.column-title {
-				font-size: 24rpx;
-				color: rgba(42, 55, 75, 1);
-				line-height: 34rpx;
+				font-size: 26rpx;
+				color: #333333;
+				margin-top: 17rpx;
 			}
 
 			.columnBox {
