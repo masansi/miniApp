@@ -15,8 +15,16 @@
 				<view class="item" v-for="(item, index) in bannerList" :key="index"  :class="[{'active': swiperIndex === index}]"></view>
 			</view>
 		</view>
-		<view class="">
+		<view class="classBox">
 			<homeTab :courseTypes="courseTypes"/>
+		</view>
+		<view class="newBox">
+			<view class="title">
+				最近更新
+			</view>
+			<view class="itemInfo">
+				<image src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/images/shuijiao.jpg" mode="aspectFill"></image>
+			</view>
 		</view>
 	</view>
 </template>
@@ -111,9 +119,24 @@
 				background-color: #FFE031;
 			}
 		}
-		
 	}
-	
+	.classBox{
+		margin-top: 20rpx;
+	}
+	.newBox{
+		.title{
+			font-size: 32rpx;
+			padding: 30rpx 0 40rpx 0;
+		}
+		.itemInfo{
+			padding: 20rpx;
+			background-color: #ffffff;
+			display: flex;
+			image{
+				
+			}
+		}
+	}
 }
 
 </style>
